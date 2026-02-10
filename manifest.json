@@ -1,10 +1,10 @@
 {
-  "name": "Form App",
-  "short_name": "Form",
+  "name": "SAPOLY",
+  "short_name": "SAPOLY",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0f172a",
+  "background_color": "#1a0033",
+  "theme_color": "#4b0082",
   "icons": [
     {
       "src": "icon-192.png",
