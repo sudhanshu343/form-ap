@@ -2,70 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>SAPOLY</title>
 
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4b0082">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4b0082" />
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" />
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #1a0033;
-      color: white;
     }
 
     header {
-      background: white;
+      background: #ffffff;
       color: #4b0082;
-      padding: 15px;
       text-align: center;
-      font-size: 22px;
+      padding: 14px;
+      font-size: 20px;
       font-weight: bold;
+      letter-spacing: 1px;
     }
 
-    .container {
-      padding: 20px;
-    }
-
-    input, button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 8px;
+    iframe {
       border: none;
-      font-size: 16px;
-    }
-
-    input {
-      background: #f2f2f2;
-    }
-
-    button {
-      background: #6a0dad;
-      color: white;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #7b1fd1;
+      width: 100%;
+      height: calc(100vh - 56px);
     }
   </style>
 </head>
+
 <body>
 
   <header>SAPOLY</header>
 
-  <div class="container">
-    <input type="text" placeholder="Enter something..." />
-    <button>Submit</button>
-  </div>
+  <!-- 👇👇👇 YAHI PE FORM LOAD HOGA 👇👇👇 -->
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSc0ce-0f4BspR1UDsWMqf2_3YV2bf4hZFfAbZX-YSbyfbmcVA/viewform?usp=pp_url">
+  </iframe>
 
   <script>
     if ("serviceWorker" in navigator) {
