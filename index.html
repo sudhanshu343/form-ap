@@ -4,40 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Form App</title>
+  <title>SAPOLY</title>
 
-  <!-- PWA Manifest -->
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4b0082">
 
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#0f172a">
-
-  <!-- iPhone support -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Form App">
+  <!-- Icons -->
+  <link rel="apple-touch-icon" href="icon-192.png">
 
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #0f172a;
+      font-family: Arial, sans-serif;
+      background: #1a0033;
+      color: white;
     }
-    iframe {
-      border: none;
+
+    header {
+      background: white;
+      color: #4b0082;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    input, button {
       width: 100%;
-      height: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    input {
+      background: #f2f2f2;
+    }
+
+    button {
+      background: #6a0dad;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #7b1fd1;
     }
   </style>
 </head>
 <body>
 
-  <!-- 👇👇👇 YAHAN APNA GOOGLE FORM URL DAALNA 👇👇👇 -->
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSc0ce-0f4BspR1UDsWMqf2_3YV2bf4hZFfAbZX-YSbyfbmcVA/viewform?usp=pp_url"
-    allowfullscreen>
-  </iframe>
+  <header>SAPOLY</header>
+
+  <div class="container">
+    <input type="text" placeholder="Enter something..." />
+    <button>Submit</button>
+  </div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
 
 </body>
 </html>
